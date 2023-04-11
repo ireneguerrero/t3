@@ -1,1 +1,1 @@
-window.alert("Página cargada");
+console.log("Página cargada");
