@@ -10,3 +10,13 @@ h1{
 .classp2 nav{
     background-color: gainsboro;
 }
+
+a{
+    display: inline-block;
+    width: 20vw;
+    max-width: 120px;
+    background-color: lightblue;
+    margin: 2px;
+    border-radius: 2px;
+    box-shadow: 5px 10px 18px rgb(70, 175, 210);
+}

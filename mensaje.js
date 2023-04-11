@@ -1,0 +1,1 @@
+window.alert("Página cargada");
