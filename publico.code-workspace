@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "publico",
+			"path": "../../../Users/irene/OneDrive/Escritorio/-/DAW/Lenguajedemarcas/publico"
+		},
+		{
+			"name": "cancionirenenaomi",
+			"path": "../../../Users/irene/OneDrive/Escritorio/-/DAW/Lenguajedemarcas/cancionirenenaomi"
+		},
+		{
+			"name": "RepositorioLenguajeDeMarcas",
+			"path": "../../../Users/irene/OneDrive/Escritorio/-/DAW/Lenguajedemarcas/RepositorioLenguajeDeMarcas"
+		},
+		{
+			"name": "RepositorioBD",
+			"path": "../../../Users/irene/OneDrive/Escritorio/-/DAW/Base de datos/RepositorioBD"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"vscode-pets.position": "explorer",
+		"vscode-pets.theme": "beach",
+		"vscode-pets.throwBallWithMouse": true
+	}
+}
