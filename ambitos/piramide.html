@@ -22,23 +22,41 @@
         'use strict';
 
         var f, y;
+        var a, n = 3;
+
 
         function imprimir() {
 
-            for (f = 1; f <= 20; f++) {
-                document.write("<br> ");
+            for (f = 1; f <= 25; f++) {
+
+                document.write("<br>");
                 for (y = 1; y <= 20; y++) {
                     document.write(" &nbsp;");
                 }
-                document.write("asd");
+
                 if (f == 20) {
-                    var a = 1;
-                    while (a <= 3) {
-                        for (a = 1; a <= a; a++) {
-                            document.write("o");
+
+                    for (let i = 1; i <= n; i++) {
+
+                        for (let j = 1; j <= n - i; j++) {
+                            document.write(' ');
+
+
                         }
+
+                        for (let k = 0; k < 2 * i - 1; k++) {
+                            document.write("o");
+
+                        }
+                        document.write("<br>")
+                        for (y = 1; y <= 20 - i; y++) {
+                            document.write(" &nbsp;");
+                        }
+
                     }
+
                 }
+
             }
         }
 
