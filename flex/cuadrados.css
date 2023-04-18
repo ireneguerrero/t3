@@ -26,6 +26,9 @@ div {
     width: 10vw;
     height: 15vh;
     background-color: rgb(222, 100, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #fc {
