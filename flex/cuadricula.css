@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pantalla {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* pega en los extremos y centra el restante */
+    align-items: center; /* los elementos se centran horizontalmente */
+    height: 100vh;
+    width: 100vw;
+}
+
+article {
+    display: flex;
+    flex-direction: row; /* los cuadros estarán horizontales */
+    justify-content: space-between; /* pega en los extremos y centra el restante */
+    align-items: center; /* los elementos se centran verticalmente */
+}
+
+div {
+    width: 15vw;
+    height: 15vh;
+    background-color: green; /* para ver los cuadros inicialmente */
+}
