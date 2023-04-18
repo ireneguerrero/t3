@@ -5,15 +5,16 @@
 }
 
 #pantalla {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* pega en los extremos y centra el restante */
     align-items: center; /* los elementos se centran horizontalmente */
-    height: 100vh;
-    width: 100vw;
 }
 
 article {
+    width: 100%;
     display: flex;
     flex-direction: row; /* los cuadros estarán horizontales */
     justify-content: space-between; /* pega en los extremos y centra el restante */
@@ -23,5 +24,5 @@ article {
 div {
     width: 15vw;
     height: 15vh;
-    background-color: green; /* para ver los cuadros inicialmente */
+    background-color: rgb(252, 100, 227); /* para ver los cuadros inicialmente */
 }
