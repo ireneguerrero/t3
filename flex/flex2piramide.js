@@ -1,32 +1,56 @@
-'use strict'; //nos ayuda a no dejar pasar ningún error
+'use strict';
+    
+var f, y;
+var a, n = 3;
+var piramide= "--o--<br/>-ooo-<br/>ooooo";
 
-//pedimos el número de cuadro donde escribir HOLA
-var cuadro = prompt("Diga en qué cuadro quiere la pirámide (1 - 5)", "");
+do{
+var cuadro = prompt("Diga que cuadro quiere saludar (1-5)","");
 cuadro = parseInt(cuadro);
-//cuadro ahora será una variable numérica, supuestamente entre 1 y 5
+}while (cuadro >5 || cuadro < 0);
 
-var estecuadro="";
+do{
+    var cuadro2 = prompt("Diga que color quiere (a,b,c)","");
+    
+    }while (!cuadro2=="a" || !cuadro2=="b"|| !cuadro2=="c");
 
-switch(cuadro){
-    case 1:
-        estecuadro = document.getElementById(c1);
-        break;
-    case 2:
-        estecuadro = document.getElementById(c2);
-        break;
-    case 3:
-        estecuadro = document.getElementById(c3);
-        break;
-    case 4:
-        estecuadro = document.getElementById(c4);
-        break;
-    case 5:
-        estecuadro = document.getElementById(c5);
-        break;
-    default:
-        alert("Mal número ingresado");
-        exit(-1);
+
+var selector = "c"+cuadro;
+
+var estecuadro = document.getElementById(selector);
+
+estecuadro.innerHTML=piramide;
+
+if(cuadro2 =="a"){
+estecuadro.style.color="red";
+}else if(cuadro2 == "b"){
+
+    estecuadro.style.color="blue";
+}else if(cuadro2 =="c"){
+
+    estecuadro.style.color="green";
+}
+function imprimir() {
+    document.write("<br>")
+
+
+for (let i = 0; i <= n; i++) {
+
+for (let j = 0; j <= n - i; j++) {
+document.write(' ');
+
+
 }
 
+for (let k = 0; k < 2 * i - 1; k++) {
+document.write("*");
 
-estecuadro.innerHTML = "HOLA";
+}
+document.write("<br>")
+for (y = 1; y <= 12 - i; y++) {
+document.write(" &nbsp;");
+}
+
+}
+
+}
