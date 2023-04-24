@@ -3,7 +3,9 @@
 var color = "white";
 function obtieneColor(identificador){
     let id="c"+identificador;
-    color=document.getElementById(id).style.backgroundColor;
+    let cuadro=document.getElementById(id);
+    color=getComputedStyle(cuadro).backgroundColor;
+    console.log(color);
 }
 
 function saludar(identificador){
