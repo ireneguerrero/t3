@@ -25,4 +25,28 @@ function saludarc1(){
     cuadro.innerHTML="HOLA";
 }
 
+function saludarc2(){
+    let cuadro=document.getElementById("c2");
+    cuadro.style.color=color;
+    cuadro.innerHTML="HOLA";
+}
+
+function saludarc3(){
+    let cuadro=document.getElementById("c3");
+    cuadro.style.color=color;
+    cuadro.innerHTML="HOLA";
+}
+
+function saludarc4(){
+    let cuadro=document.getElementById("c4");
+    cuadro.style.color=color;
+    cuadro.innerHTML="HOLA";
+}
+
+function saludarc5(){
+    let cuadro=document.getElementById("c5");
+    cuadro.style.color=color;
+    cuadro.innerHTML="HOLA";
+}
+
 eligeColor();
