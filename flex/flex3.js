@@ -19,6 +19,13 @@ function eligeColor() {
 
 }
 
+function saludar(identificador){
+    id="c"+identificador;
+    let cuadro=document.getElementById(id);
+    cuadro.style.color=color;
+    cuadro.innerHTML="HOLA";
+}
+
 function saludarc1(){
     let cuadro=document.getElementById("c1");
     cuadro.style.color=color;

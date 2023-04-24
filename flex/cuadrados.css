@@ -31,6 +31,26 @@ div {
     align-items: center;
 }
 
+#c1{
+    background-color: rgb(177, 97, 251);
+}
+
+#c2{
+    background-color: rgb(97, 179, 251);
+}
+
+#c3{
+    background-color: rgb(255, 222, 111);
+}
+
+#c4{
+    background-color: rgb(251, 97, 174);
+}
+
+#c5{
+    background-color: rgb(97, 251, 184);
+}
+
 #fc {
     justify-content: center;
 }
