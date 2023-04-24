@@ -16,7 +16,13 @@ function eligeColor() {
         default:
             color = 'black';
     }
-    
+
 }
 
-estecuadro.innerHTML = "HOLA";
+function saludarc1(){
+    let cuadro=getElementById("c1");
+    cuadro.style.color=color;
+    cuadro.innerHTML="HOLA";
+}
+
+eligeColor();
