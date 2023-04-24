@@ -20,7 +20,7 @@ function eligeColor() {
 }
 
 function saludarc1(){
-    let cuadro=getElementById("c1");
+    let cuadro=document.getElementById("c1");
     cuadro.style.color=color;
     cuadro.innerHTML="HOLA";
 }
