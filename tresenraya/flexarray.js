@@ -2,12 +2,12 @@
 
 function hover(id){
     let cuadro=document.getElementById(id);
-    cuadro.style.backgroundColor="rgb(63,63,63)";
+    cuadro.style.backgroundColor="rgb(196, 0, 245)";
 }
 
 function desmarcar(id){
     let cuadro=document.getElementById(id);
-    cuadro.style.backgroundColor="rgb(236,236,236)";
+    cuadro.style.backgroundColor="rgb(218, 158, 255)";
 }
 
 function pintar(id){
