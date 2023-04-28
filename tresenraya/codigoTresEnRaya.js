@@ -1,13 +1,12 @@
 'use strict'
-alert('Alberto Moreno 1º DAW dice:\n ¡Bienvenido al Juego de Tres en Raya!');
-function oscurecer(identificador) {
-    console.log("Se ha llamado a la función oscurecer con el identificador: " + identificador);
+alert('Hola, Mar Llanes Garcia de 1DAW, bienvenidx!:\n ¡A ver quien gana!');
+function oscurito(identificador) {
     let cuadrado = document.getElementById(identificador);
-    cuadrado.style.backgroundColor = "cornflowerblue";
+    cuadrado.style.backgroundColor = "purple";
 
 }
 
-function aclarar(identificador) {
+function Quitar(identificador) {
     let cuadrado = document.getElementById(identificador);
     cuadrado.style.backgroundColor = "";
 }
@@ -18,30 +17,29 @@ let tablero = [
     [0, 0, 0],
     [0, 0, 0]
 ];
-let jugadorActual = 'X';
+let jugadorActual = '♡';
 let contadorTurnos = 0;
 
-function pintarSimbolo(identificador) {
+function simbolo(identificador) {
     let cuadrado = document.getElementById(identificador);
     if (cuadrado.innerHTML === '') {
         cuadrado.innerHTML = jugadorActual;
         cuadrado.style.fontSize = "5em";
         contadorTurnos++;
-        if (hayGanador()) {
-            alert('¡Ha ganado el jugador ' + jugadorActual + '!');
+        if (ganador()) {
+            alert('¡GANO: ' + jugadorActual + '!');
             reiniciarJuego();
         } else if (contadorTurnos === 9) {
-            alert('¡El juego ha terminado en empate!');
+            alert('¡EMPATE!');
             reiniciarJuego();
         } else {
-            jugadorActual = jugadorActual === 'X' ? 'O' : 'X';
+            jugadorActual = jugadorActual === '☆' ? '♡' : '☆';
         }
     }
 }
 
-function hayGanador() {
+function ganador() {
     let simbolo;
-    // Comprobar filas
     for (let i = 1; i <= 3; i++) {
         simbolo = document.getElementById('c' + i + '1').innerHTML;
         if (simbolo !== '' &&
@@ -50,7 +48,6 @@ function hayGanador() {
             return true;
         }
     }
-    // Comprobar columnas
     for (let i = 1; i <= 3; i++) {
         simbolo = document.getElementById('c1' + i).innerHTML;
         if (simbolo !== '' &&
@@ -59,7 +56,6 @@ function hayGanador() {
             return true;
         }
     }
-    // Comprobar diagonales
     simbolo = document.getElementById('c11').innerHTML;
     if (simbolo !== '' &&
         simbolo === document.getElementById('c22').innerHTML &&
@@ -72,12 +68,11 @@ function hayGanador() {
         simbolo === document.getElementById('c31').innerHTML) {
         return true;
     }
-    // Si no se ha encontrado ganador, devolver false
     return false;
 }
 
 function reiniciarJuego() {
-    jugadorActual = 'X';
+    jugadorActual = '☆';
     contadorTurnos = 0;
     for (let i = 1; i <= 3; i++) {
         for (let j = 1; j <= 3; j++) {

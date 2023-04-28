@@ -1,31 +1,35 @@
 body {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-color: rgba(248, 221, 250, 0.61);
     
-    background-image: linear-gradient(to top, aqua, lightskyblue);
 }
 
-.todo {
+.CuadroGrande{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40%;
     width: 24%;
-    border: 3px solid darkblue
+    border: 2px solid rgb(192, 98, 255);
+    }
     
-}
-
-.linea {
+.CuadroGrande > div{
     display: flex;
     margin: 0;
-}
+    background-color: rgb(235, 205, 255);
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    }
 
-.cuadrado {
+.cuadro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,25 +42,19 @@ body {
     font-size: xx-large;
 
 }
-
-
-
-/* Estilos adicionales para crear la matriz de 3x3 */
+    
+/* codigo del Juego*/
 .linea {
     flex-wrap: nowrap;
-    /* Evita que los elementos de la fila se envuelvan */
 }
 
 .cuadrado:nth-child(4),
 .cuadrado:nth-child(5),
 .cuadrado:nth-child(6) {
     border-top: none;
-    /* Elimina el borde superior de la segunda fila */
 }
 
 .linea:first-child .square,
 .linea:last-child .square {
     border-bottom: none;
-    /* Elimina el borde inferior de la primera y última fila */
 }
-
