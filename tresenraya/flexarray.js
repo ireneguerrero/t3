@@ -14,3 +14,4 @@ function pintar(id){
     let cuadro=document.getElementById(id);
     cuadro.innerHTML="♡";
 }
+//♐︎
