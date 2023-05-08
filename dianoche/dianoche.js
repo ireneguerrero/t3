@@ -1,31 +1,3 @@
-/*
-const modeToggle = document.getElementById('mode-toggle');
-const modeSymbol = document.getElementById('mode-symbol');
-const body = document.body;
-
-const storedMode = localStorage.getItem('mode');
-if (storedMode) {
-    body.classList.add(storedMode);
-    updateModeSymbol(storedMode);
-}
-
-modeToggle.addEventListener('click', function () {
-    if (body.classList.contains('dark-mode')) {
-        body.classList.remove('dark-mode');
-        localStorage.setItem('mode', 'light-mode');
-        updateModeSymbol('light-mode');
-    } else {
-        body.classList.add('dark-mode');
-        localStorage.setItem('mode', 'dark-mode');
-        updateModeSymbol('dark-mode');
-    }
-});
-
-
-function updateModeSymbol(mode) {
-    modeSymbol.innerHTML = mode === 'dark-mode' ? '🌙' : '☀️';
-}*/
-
 var modo = leerModoActual();
 if(modo=="dia"){
     ponerModoDia();
@@ -61,8 +33,8 @@ function ponerModoNoche(){
     window.localStorage.setItem("modoGuardado","noche");
     //ocultamos luna
     let iconoNoche=document.getElementById("noche");
-    iconoDia.style.display="none";
+    iconoNoche.style.display="none";
     //mostramos sol
     let iconoDia=document.getElementById("dia");
-    iconoNoche.style.display="block";
+    iconoDia.style.display="block";
 }
