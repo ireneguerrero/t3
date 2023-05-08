@@ -1,0 +1,23 @@
+#too{
+    color: green;
+    background-color: yellow;
+}
+
+#zonaModo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    background-color: transparent;
+}
+
+#dia, #noche {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#dia {
+    display: none;
+}
