@@ -1,5 +1,5 @@
 'use strict'
-alert('¡Hola, soy Irene Guerrero de 1DAW, bienvenida!:\n ¿Podrás ganarme?');
+alert('¡Hola, soy Irene Guerrero de 1DAW, bienvenida!\n¿Podrás ganarme?');
 function oscurito(identificador) {
     let cuadrado = document.getElementById(identificador);
     cuadrado.style.backgroundColor = "pink";
