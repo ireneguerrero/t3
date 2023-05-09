@@ -1,12 +1,9 @@
-*{
-    background-image: url('fondo.jpeg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
 body{
     margin: 0;
     padding: 0;
+    background-image: url('fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -15,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 180px;
+    background-position: center;
 }
 
 .box{
@@ -23,14 +21,19 @@ body{
     padding: 20px;
     margin: 10px;
     text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .box:hover{
     cursor: pointer;
     border: 1px solid-black;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .box-content{
@@ -43,4 +46,8 @@ element.style{
 
 #letras{
     color: white;
+}
+
+h1{
+    margin: 0;
 }
