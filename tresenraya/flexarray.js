@@ -2,7 +2,7 @@
 alert('¡Hola, soy Irene Guerrero de 1DAW, bienvenida!\n¿Podrás ganarme?');
 function oscurito(identificador) {
     let cuadrado = document.getElementById(identificador);
-    cuadrado.style.backgroundColor = "pink";
+    cuadrado.style.backgroundColor = "#b3caf3";
 
 }
 

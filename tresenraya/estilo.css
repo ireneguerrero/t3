@@ -12,20 +12,62 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: rgba(251, 201, 255, 0.61);
-    
 }
 
-.todo{
+h1{
+    font-style: inherit;
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 20px;
+}
+
+:root {
+    --colorNormal: black;
+    font-size: 1rem;
+}
+
+p,
+h1,
+h2,
+h3 {
+    color: var(--colorNormal);
+}
+
+#menu {
+    position: fixed;
+    left: 20px; /* Ajusta la posición izquierda según necesites */
+    top: 20px; /* Ajusta la posición superior según necesites */
+    background-color: #b3caf3;
+    padding: 20px;
+}
+#menu p {
+    margin-bottom: 10px;
+}
+
+#menu button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #7c4caf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#menu button:hover {
+    background-color: #7145a0;
+}
+
+.todo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50%;
     width: 25%;
-    border: 2px solid rgb(255, 136, 255);
+    
 }
 
-.todo > div{
+.todo>div {
     display: flex;
     margin: 0;
     background-color: rgb(255, 188, 249);
@@ -60,17 +102,4 @@ body {
 .linea:first-child .square,
 .linea:last-child .square {
     border-bottom: none;
-}
-
-:root {
-    --colorNormal:black;
-    font-size:1rem;
-    
-    /* ventajas del REM vs PX: funciona con el zoom
-    el navegador usa REM por defecto en 14 o 16 px dependiendo... */
-    
-}
-
-p, h1, h2, h3 {
-    color:var(--colorNormal);
 }
