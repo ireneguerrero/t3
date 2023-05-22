@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="binks_no_sake.xsl"?>
+<Cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/xampp/htdocs/t3/trabajofinal/binks_no_sake.xsd">
+	<titulo>Binks No Sake</titulo>
+	<artista>Eiichirō Oda</artista>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Binkusu no sake wo todoke ni yuku yo</verso>
+			<verso>Umikaze, kimakase nami makase</verso>
+			<verso>Shio no mukou de yuuhi mo sawagu</verso>
+			<verso>Sora nya, wa wo kaku tori no uta</verso>
+			<verso>Sayonara minato tsumugi no sato yo</verso>
+			<verso>"Don" to icchou utao funade no uta</verso>
+			<verso>Kinpa-ginpa mo shibuki ni kaete</verso>
+			<verso>Oretachya yuku zo umi no kagiri</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Binkusu no sake wo todoke ni yuku yo</verso>
+			<verso>Warera kaizoku umi watteku</verso>
+			<verso>Nami wo makura ni negura wa fune yo</verso>
+			<verso>Ho ni hata ni ketateru wa dokuro</verso>
+			<verso>Arashi ga kitazo senri no sora ni</verso>
+			<verso>Nami ga odoru yo doramu narase</verso>
+			<verso>Okubyou kaze ni fukarerya saigo</verso>
+			<verso>Asu no asahi ga nai ja nashi</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>normal</tipo>
+			<verso>Binkusu no sake wo todoke ni yuku yo</verso>
+			<verso>Kyou ka asu ka to yoi no yume</verso>
+			<verso>Te wo furu kage ni mou are nai yo</verso>
+			<verso>Nani wo kuyoku yo asu mo tsuku yo</verso>
+			<verso>Binkusu no sake wo todoke ni yuku yo</verso>
+			<verso>"Don" to icchou utaou unaba no uta</verso>
+			<verso>Douse daredemo itsuka wa hone yo</verso>
+			<verso>Hatenashi atenashi</verso>
+			<verso>Warai banashi</verso>
+		</estrofa>
+		<estrofa>
+			<tipo>estribillo</tipo>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+			<verso>Yo-ho-ho-ho, yo-ho-ho-ho</verso>
+		</estrofa>
+</Cancion>
