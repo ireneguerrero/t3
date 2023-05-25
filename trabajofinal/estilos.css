@@ -2,6 +2,9 @@
     background-color: rgb(255, 192, 240);
 }
 
+img{
+    margin-left: 90%;
+}
 
 li {
     /* estilo del botón */
