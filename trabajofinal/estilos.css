@@ -2,18 +2,18 @@
     background-color: rgb(255, 192, 240);
 }
 
-#index{
-    background-image: url("./fondo4.jpg");
+#index {
+    background-image: url("./recursos/fondo2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-#ajustes{
+#ajustes {
     background-color: rgb(255, 192, 240);
 }
 
-#mas{
-    background-image: url("./fondo3.jpg");
+#mas {
+    background-image: url("./recursos/fondo1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -120,4 +120,16 @@ dialog button:hover {
     background-color: #F80DAE;
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.desplegable {
+    background-color: #eacee3d8;
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 10px;
 }

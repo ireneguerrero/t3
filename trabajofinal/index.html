@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Final</title>
-    <link rel="stylesheet" type="text/css" href="./estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="./estilos.css" />
 </head>
 
 <body id="index">
@@ -28,15 +28,78 @@
     </nav>
 
     <div id="boton" align="center">
-        <button onclick="window.modal.showModal();">Púlsame para abrir</button>
+        <button onclick="window.modal.showModal();">Hola</button>
         <dialog id="modal">
             <p>
-                Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece
-
+                Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece. <br>
+                En la página Binks no sake hay un gif con una animación <br>
+                ¡Te invito a probarlo! <br>
+                
             </p>
-            <button onclick="window.modal.close();">Púlsame para cerrar</button>
+            <button onclick="window.modal.close();">¡Disfruta de la página!</button>
         </dialog>
     </div>
+
+    <div class="contenedor">
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>La voluntad de D.</summary>
+            <p>
+                Según esta teoría, la "D." <br>
+                presente en los nombres de algunos personajes, <br>
+                como Monkey D. Luffy y Gol D. Roger, <br>
+                es un indicio de una conexión especial entre ellos. <br>
+                Se cree que esta letra representa una herencia ancestral <br>
+                o un linaje que está relacionado con eventos cruciales en <br>
+                el mundo de One Piece.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>El Tesoro de One Piece</summary>
+            <p>
+                Esta es una de las teorías más discutidas. <br>
+                Según ella, el tesoro mencionado en el título del anime <br>
+                es en realidad un concepto abstracto y no un tesoro material. <br>
+                Algunos creen que el verdadero tesoro es la amistad y la camaradería <br>
+                que los personajes encuentran en su viaje. <br>
+                Sin embargo, Oda reveló que odia ese tipo de finales.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>El Gobierno Mundial</summary>
+            <p>
+                Esta teoría sugiere que el Gobierno Mundial en One Piece es en realidad una <br>
+                entidad malévola que oculta información sobre la Verdadera Historia <br>
+                y busca mantener el control sobre el mundo. <br>
+                Se cree que hay una conspiración detrás de sus acciones y que hay un objetivo oculto <br>
+                detrás de su poder.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>Los Poneglyphs</summary>
+            <p>
+                Los Poneglyphs son unas piedras antiguas que contienen <br>
+                información sobre la Verdadera Historia. <br>
+                Según esta teoría, si todos los Poneglyphs se juntan, <br>
+                revelarían secretos cruciales sobre el pasado del mundo de One Piece <br>
+                y la historia de los antiguos reinos.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>La ubicación de One Piece</summary>
+            <p>
+                Esta teoría especula sobre la ubicación real de One Piece. <br>
+                Algunos creen que está en la Isla Raftel, la última isla de la Ruta de Grand Line, <br>
+                mientras que otros sugieren ue el tesoro puede estar relacionado con el All Blue, <br>
+                un legendario mar que contiene todos los tipos de peces.
+            </p>
+        </details>
+
+    </div>
+    <script src="./desplegable.js"></script>
 </body>
 
 </html>
