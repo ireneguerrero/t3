@@ -2,7 +2,7 @@ body{
     counter-reset: estrofa section;
     width: 55%;
     margin: 0 auto; 
-    background-color: pink;
+    background-color: rgb(255, 192, 240);
 }
 
 header {
@@ -45,8 +45,8 @@ span{
         content:  " " counter(estrofa) ": ";
     }
 
-  p::before {
+p::before {
     counter-increment: section; 
     content: "Verso " counter(section) ": "; 
     color: black;
-  }
+}
