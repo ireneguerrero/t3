@@ -24,12 +24,36 @@
             <a href="./mas.html">
                 <li>Más teorías</li>
             </a>
+            <a onclick="window.modal.showModal();">
+                <li>Hola</li>
+            </a>
+            <dialog id="modal">
+                <p>
+                    Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece.
+                    <br>
+                    En la página Binks no sake hay un gif con una animación <br>
+                    ¡Te invito a probarlo! <br>
+                </p>
+                <button onclick="window.modal.close();">¡Disfruta de la página!</button>
+            </dialog>
         </ul>
     </nav>
+    <div id="nombre-form">
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <div id="nombre-registrado"></div>
 
 
-
-
+    <script src="./javascript.js">
+        cambiarFuente();
+        mostrarTextoAlmacenado();
+        decirHola();
+    </script>
 </body>
 
 </html>

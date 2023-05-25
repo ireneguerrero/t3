@@ -24,21 +24,23 @@
             <a href="./mas.html">
                 <li>Más teorías</li>
             </a>
+            <a onclick="window.modal.showModal();">
+                <li>Hola</li>
+            </a>
+            <dialog id="modal">
+                <p>
+                    Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece.
+                    <br>
+                    En la página Binks no sake hay un gif con una animación <br>
+                    ¡Te invito a probarlo! <br>
+                </p>
+                <button onclick="window.modal.close();">¡Disfruta de la página!</button>
+            </dialog>
         </ul>
+
     </nav>
 
-    <div id="boton" align="center">
-        <button onclick="window.modal.showModal();">Hola</button>
-        <dialog id="modal">
-            <p>
-                Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece. <br>
-                En la página Binks no sake hay un gif con una animación <br>
-                ¡Te invito a probarlo! <br>
-                
-            </p>
-            <button onclick="window.modal.close();">¡Disfruta de la página!</button>
-        </dialog>
-    </div>
+
 
     <div class="contenedor">
         <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
@@ -99,7 +101,11 @@
         </details>
 
     </div>
-    <script src="./desplegable.js"></script>
+    <script src="./javascript.js">
+        cambiarFuente();
+        mostrarTextoAlmacenado();
+        decirHola();
+    </script>
 </body>
 
 </html>

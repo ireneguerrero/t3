@@ -24,8 +24,79 @@
             <a href="./mas.html">
                 <li id="seleccionado">Más teorías</li>
             </a>
+            <a onclick="window.modal.showModal();">
+                <li>Hola</li>
+            </a>
+            <dialog id="modal">
+                <p>
+                    Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece.
+                    <br>
+                    En la página Binks no sake hay un gif con una animación <br>
+                    ¡Te invito a probarlo! <br>
+                </p>
+                <button onclick="window.modal.close();">¡Disfruta de la página!</button>
+            </dialog>
         </ul>
     </nav>
+
+    <div class="contenedor">
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>Las Frutas del Diablo</summary>
+            <p>
+                Esta teoría se centra en las misteriosas Frutas del Diablo <br>
+                que otorgan poderes sobrenaturales a quienes los consumen. <br>
+                Se especula sobre la existencia de una Fruta del Diablo suprema <br>
+                que otorgaría habilidades absolutas a quien lo consuma.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>El Tesoro de One Piece</summary>
+            <p>
+                La relación entre Shanks y Gol D. Roger: Algunos fanáticos creen que Shanks, uno de los Yonko
+                y mentor de Luffy, puede tener una conexión más profunda con Gol D. Roger de lo que se ha revelado hasta
+                ahora. Se especula que Shanks pudo haber sido miembro de la tripulación de Roger o incluso su hijo.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>El Gobierno Mundial</summary>
+            <p>
+                Esta teoría sugiere que el Gobierno Mundial en One Piece es en realidad una <br>
+                entidad malévola que oculta información sobre la Verdadera Historia <br>
+                y busca mantener el control sobre el mundo. <br>
+                Se cree que hay una conspiración detrás de sus acciones y que hay un objetivo oculto <br>
+                detrás de su poder.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>Los Poneglyphs</summary>
+            <p>
+                Los Poneglyphs son unas piedras antiguas que contienen <br>
+                información sobre la Verdadera Historia. <br>
+                Según esta teoría, si todos los Poneglyphs se juntan, <br>
+                revelarían secretos cruciales sobre el pasado del mundo de One Piece <br>
+                y la historia de los antiguos reinos.
+            </p>
+        </details>
+
+        <details class="desplegable" onclick="mostrarTituloDesplegable(this)">
+            <summary>La ubicación de One Piece</summary>
+            <p>
+                Esta teoría especula sobre la ubicación real de One Piece. <br>
+                Algunos creen que está en la Isla Raftel, la última isla de la Ruta de Grand Line, <br>
+                mientras que otros sugieren ue el tesoro puede estar relacionado con el All Blue, <br>
+                un legendario mar que contiene todos los tipos de peces.
+            </p>
+        </details>
+
+    </div>
+    <script src="./javascript.js">
+        cambiarFuente();
+        mostrarTextoAlmacenado();
+        decirHola();
+    </script>
 </body>
 
 </html>
