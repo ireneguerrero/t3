@@ -1,0 +1,55 @@
+li {
+    /* estilo del botón */
+    display: inline-block;
+    width: 10%;
+    height: 2em;
+    background-color: rgb(255, 224, 253);
+    border-radius: 5px;
+    margin: 5px;
+    border-width: 0px 2px 2px 0px;
+    border-color: plum;
+    border-style: solid;
+    text-align: center;
+    padding-top: 1vh;
+    font-size: large;
+    box-shadow: 2px 2px rgb(229, 143, 255);
+}
+
+#seleccionado {
+    box-shadow: 2px 2px rgb(229, 143, 255) inset;
+}
+
+li#seleccionado {
+    background-color: rgb(251, 212, 255);
+}
+
+dialog::backdrop {
+    background-color: rgba(148, 90, 255, 0.8);
+}
+
+button {
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    background-color: #eacee3d8;
+    color: #321c3b;
+    padding: 20px 35px;
+    margin: 30px 0 20px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;  
+    font-weight: 700;  
+    transition: box-shadow 0.25s ease-in-out;
+    box-shadow: 0px 0px 0 #fff;
+}
+
+button:hover {
+    box-shadow: 8px 8px 0 #fff;
+}
+
+dialog button {
+    box-shadow: 0px 0px 0 #321c3b;
+}
+
+dialog button:hover {
+    box-shadow: 8px 8px 0 #321c3b;
+}
