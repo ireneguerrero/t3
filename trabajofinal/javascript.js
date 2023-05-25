@@ -16,6 +16,34 @@ function cerrarModal() {
     modal.style.display = 'none';
 }
 
+function decirHola() {
+    var persona = sessionStorage.getItem('texto');
+    console.log('hola ' + persona);
+}
+
+function mostrarTextoAlmacenado() {
+    var textoAlmacenado = sessionStorage.getItem('texto') || 'sin identificar';
+    var textoMostrado = document.getElementById('texto-mostrado');
+    textoMostrado.textContent = textoAlmacenado;
+}
+
+function cambiarFuente() {
+    listValue = localStorage.getItem('fuente');
+    document.body.style.fontFamily = listValue;
+}
+
+function mostrarTextoAlmacenado() {
+    var textoAlmacenado = sessionStorage.getItem('texto') || 'sin identificar';
+    var textoMostrado = document.getElementById('texto-mostrado');
+    textoMostrado.textContent = textoAlmacenado;
+}
+
+function almacenarEnSessionStorage() {
+    var textoInput = document.getElementById('texto-input').value;
+    sessionStorage.setItem('texto', textoInput);
+    alert('¡Bienvenidx ' + textoInput + '!');
+}
+
 /*  formulario */
 document.getElementById("formulario").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -27,22 +55,6 @@ document.getElementById("formulario").addEventListener("submit", function (event
     document.querySelector("#formulario button[type='submit']").disabled = true;
 
     var nombreDiv = document.createElement("div");
-    nombreDiv.textContent = '¡Bienvenidx, ' + nombre + '!' || 'sin identificar';
+    nombreDiv.textContent = '¡Bienvenidx, ' + nombre + '!';
     document.getElementById("nombre-registrado").appendChild(nombreDiv);
 });
-
-function decirHola(){
-    var persona =sessionStorage.getItem('texto');
-    console.log('hola '+persona);
-}
-
-function mostrarTextoAlmacenado() {
-    var textoAlmacenado = sessionStorage.getItem('texto') || 'sin identificar';
-    var textoMostrado = document.getElementById('texto-mostrado');
-    textoMostrado.textContent = textoAlmacenado;
-}
-
-function cambiarFuente(){
-    listValue=localStorage.getItem('fuente');
-    document.body.style.fontFamily = listValue;
-}

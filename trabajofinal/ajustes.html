@@ -37,6 +37,7 @@
                 <button onclick="window.modal.close();">¡Disfruta de la página!</button>
             </dialog>
         </ul>
+        
     </nav>
     <div id="nombre-form">
         <form id="formulario">
@@ -47,12 +48,40 @@
     </div>
 
     <div id="nombre-registrado"></div>
+    <select onchange="myFunction(this);" size="13">
+        <option>Arial</option>
+        <option>Arial Black</option>
+        <option>Book Antiqua</option>
+        <option>Comic Sans MS</option>
+        <option>Courier New</option>
+        <option>Georgia</option>
+        <option>Helvetica</option>
+        <option>Impact</option>
+        <option>Lucida Console</option>
+        <option>Lucida Sans Unicode</option>
+        <option>Palatino Linotype</option>
+        <option>Tahoma</option>
+        <option>Times New Roman</option>
+    </select>
+
+    <label for="colores">elige un color:</label>
+    <select onchange="cambiarColor(this);" name="colores" id="colores">
+        <option value=""></option>
+        <option value="red">rojo</option>
+        <option value="blue">azul</option>
+        <option value="black">negro</option>
+        <option value="yellow">amarillo</option>
+    </select>
 
 
     <script src="./javascript.js">
         cambiarFuente();
         mostrarTextoAlmacenado();
         decirHola();
+        function cambiarColor(selectElement) {
+            var color = selectElement.value;
+            document.body.style.color = color;
+        }
     </script>
 </body>
 
