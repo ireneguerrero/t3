@@ -44,6 +44,20 @@ li#seleccionado {
     background-color: rgb(251, 212, 255);
 }
 
+#bandera{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-left: 43%;
+}
+
+#luffy{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-left: 43%;
+}
+
 .flip-box {
     background-color: transparent;
     width: 10%;
@@ -94,7 +108,7 @@ li#seleccionado {
 
 .desplegable {
     background-color: #eacee3d8;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-right: 30px;
     padding: 10px;
 }
@@ -161,7 +175,6 @@ h3 {
 }
 
 #ajustes {
-
     justify-content: center;
     align-self: flex-start;
     align-items: baseline;
