@@ -7,9 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajustes</title>
     <link rel="stylesheet" type="text/css" href="./estilos.css" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modoGuardado = localStorage.getItem('modo');
+            if (modoGuardado === 'noche') {
+                document.body.classList.add('modo-noche');
+            }
+        });
+    </script>
 </head>
 
 <body id="ajustes">
+
     <nav>
         <ul>
             <a href="./index.html">
@@ -29,23 +38,50 @@
             </a>
             <dialog id="modal">
                 <p>
-                    Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece.
-                    <br>
+                    Soy Irene Guerrero del curso 1DAW y este es mi trabajo final sobre teorías del anime One Piece.<br>
                     En la página Binks no sake hay un gif con una animación <br>
                     ¡Te invito a probarlo! <br>
+                    El fondo oscuro solo se ve en la página de ajustes y en la canción Binks no sake <br>
+                    porque tanto el Índice como el Más información tienen fondos de pantalla. <br>
+
                 </p>
                 <button onclick="window.modal.close();">¡Disfruta de la página!</button>
             </dialog>
         </ul>
-        
+        <p id="username"></p>
+
+
+        <label>
+            <button onclick="cambiarModo()">
+                cambiar modo a noche/dia
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </label>
+
     </nav>
-    <div id="nombre-form">
-        <form id="formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <button type="submit">Registrar</button>
-        </form>
-    </div>
+
+    <input type="text" id="usernameInput">
+    <button onclick="saveUsername()">Guardar</button>
+    <script>
+        function saveUsername() {
+            var username = document.getElementById("usernameInput").value;
+            localStorage.setItem("username", username);
+            updateUsername();
+        }
+
+        function updateUsername() {
+            var username = localStorage.getItem("username") || "sin identificar";
+            var usernameElement = document.getElementById("username");
+            usernameElement.textContent = username;
+        }
+
+        // Actualizar el nombre de usuario al cargar la página
+        document.addEventListener("DOMContentLoaded", function () {
+            updateUsername();
+        });
+    </script>
+
+
 
     <div id="nombre-registrado"></div>
     <select onchange="myFunction(this);" size="13">
@@ -77,7 +113,6 @@
     <script src="./javascript.js">
         cambiarFuente();
         mostrarTextoAlmacenado();
-        decirHola();
         function cambiarColor(selectElement) {
             var color = selectElement.value;
             document.body.style.color = color;

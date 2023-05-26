@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Final</title>
     <link rel="stylesheet" type="text/css" href="./estilos.css" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modoGuardado = localStorage.getItem('modo');
+            if (modoGuardado === 'noche') {
+                document.body.classList.add('modo-noche');
+            }
+        });
+    </script>
 </head>
 
 <body id="index">
@@ -37,8 +45,26 @@
                 <button onclick="window.modal.close();">¡Disfruta de la página!</button>
             </dialog>
         </ul>
-        <div id="nombre-registrado"></div>
+        <p id="username"></p>
     </nav>
+    <script>
+        function saveUsername() {
+            var username = document.getElementById("usernameInput").value;
+            localStorage.setItem("username", username);
+            updateUsername();
+        }
+
+        function updateUsername() {
+            var username = localStorage.getItem("username") || "sin identificar";
+            var usernameElement = document.getElementById("username");
+            usernameElement.textContent = username;
+        }
+
+        // Actualizar el nombre de usuario al cargar la página
+        document.addEventListener("DOMContentLoaded", function () {
+            updateUsername();
+        });
+    </script>
 
 
 
@@ -104,7 +130,6 @@
     <script src="./javascript.js">
         cambiarFuente();
         mostrarTextoAlmacenado();
-        decirHola();
     </script>
 </body>
 

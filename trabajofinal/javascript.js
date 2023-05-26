@@ -16,17 +16,6 @@ function cerrarModal() {
     modal.style.display = 'none';
 }
 
-function decirHola() {
-    var persona = sessionStorage.getItem('texto');
-    console.log('hola ' + persona);
-}
-
-function mostrarTextoAlmacenado() {
-    var textoAlmacenado = sessionStorage.getItem('texto') || 'sin identificar';
-    var textoMostrado = document.getElementById('texto-mostrado');
-    textoMostrado.textContent = textoAlmacenado;
-}
-
 function cambiarFuente() {
     listValue = localStorage.getItem('fuente');
     document.body.style.fontFamily = listValue;
@@ -58,3 +47,13 @@ document.getElementById("formulario").addEventListener("submit", function (event
     nombreDiv.textContent = '¡Bienvenidx, ' + nombre + '!';
     document.getElementById("nombre-registrado").appendChild(nombreDiv);
 });
+
+function cambiarModo() {
+    if (document.body.classList.contains('modo-noche')) {
+        document.body.classList.remove('modo-noche');
+        localStorage.setItem('modo', 'dia');
+    } else {
+        document.body.classList.add('modo-noche');
+        localStorage.setItem('modo', 'noche');
+    }
+} 
