@@ -48,12 +48,3 @@ document.getElementById("formulario").addEventListener("submit", function (event
     document.getElementById("nombre-registrado").appendChild(nombreDiv);
 });
 
-function cambiarModo() {
-    if (document.body.classList.contains('modo-noche')) {
-        document.body.classList.remove('modo-noche');
-        localStorage.setItem('modo', 'dia');
-    } else {
-        document.body.classList.add('modo-noche');
-        localStorage.setItem('modo', 'noche');
-    }
-} 

@@ -170,22 +170,13 @@ h3 {
     color: #000;
 }
 
-/* Estilos para el modo noche */
+.modo-dia {
+    background-color: white;
+    color: black;
+}
+
 .modo-noche {
     background-image: url(./recursos/fondo_oscuro.png);
-    color: #fff;
-}
-
-
-.modo-noche p,
-h1,
-h2,
-h3 {
-    color: #fff;
-}
-
-.modo-noche .modal-content,
-dialog {
-    background-color: #111;
-    color: #fff;
+    background-size: 100%;
+    color: white;
 }

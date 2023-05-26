@@ -8,13 +8,20 @@
     <title>Trabajo Final</title>
     <link rel="stylesheet" type="text/css" href="./estilos.css" />
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const modoGuardado = localStorage.getItem('modo');
-            if (modoGuardado === 'noche') {
-                document.body.classList.add('modo-noche');
+        document.addEventListener("DOMContentLoaded", function () {
+            var body = document.body;
+            var modo = localStorage.getItem("modo");
+
+            if (modo === "noche") {
+                body.classList.remove("modo-dia");
+                body.classList.add("modo-noche");
+            } else {
+                body.classList.remove("modo-noche");
+                body.classList.add("modo-dia");
             }
         });
     </script>
+
 </head>
 
 <body id="index">
@@ -50,14 +57,18 @@
     <script>
         function saveUsername() {
             var username = document.getElementById("usernameInput").value;
-            localStorage.setItem("username", username);
+            sessionStorage.setItem("username", username);
             updateUsername();
         }
 
         function updateUsername() {
-            var username = localStorage.getItem("username") || "sin identificar";
+            var username = sessionStorage.getItem("username");
             var usernameElement = document.getElementById("username");
-            usernameElement.textContent = username;
+            if (username) {
+                usernameElement.textContent = username;
+            } else {
+                usernameElement.textContent = "sin identificar";
+            }
         }
 
         // Actualizar el nombre de usuario al cargar la página
@@ -65,6 +76,7 @@
             updateUsername();
         });
     </script>
+
 
 
 
@@ -129,7 +141,6 @@
 
     </div>
     <script src="./javascript.js">
-        cambiarFuente();
         mostrarTextoAlmacenado();
     </script>
 </body>
