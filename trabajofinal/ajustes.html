@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajustes</title>
     <link rel="stylesheet" type="text/css" href="./estilos.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var color = localStorage.getItem("color");
+            var font = localStorage.getItem("font");
 
+            aplicarEstilos(color, font);
+        });
+    </script>
 </head>
 
 <body id="ajustes">
@@ -114,14 +121,20 @@
         });
     </script>
 
+    <input type="color" id="colorInput">
+    <select id="fontSelect">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+    </select>
+    <button onclick="aplicarCambios()">Aplicar cambios</button>
+
+
 
 
     <script src="./javascript.js">
         mostrarTextoAlmacenado();
-        function cambiarColor(selectElement) {
-            var color = selectElement.value;
-            document.body.style.color = color;
-        }
     </script>
 </body>
 

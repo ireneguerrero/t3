@@ -21,6 +21,15 @@
             }
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var color = localStorage.getItem("color");
+            var font = localStorage.getItem("font");
+
+            aplicarEstilos(color, font);
+        });
+    </script>
+
 
 </head>
 

@@ -48,3 +48,19 @@ document.getElementById("formulario").addEventListener("submit", function (event
     document.getElementById("nombre-registrado").appendChild(nombreDiv);
 });
 
+function aplicarCambios() {
+    var color = document.getElementById("colorInput").value;
+    var font = document.getElementById("fontSelect").value;
+
+    localStorage.setItem("color", color);
+    localStorage.setItem("font", font);
+
+    aplicarEstilos(color, font);
+}
+
+function aplicarEstilos(color, font) {
+    var body = document.body;
+
+    body.style.color = color;
+    body.style.fontFamily = font;
+}
